@@ -1,0 +1,107 @@
+/* Tailwind ile birlikte çalışacak özel stiller */
+
+/* Özel font yüklemesi zaten HTML başlığında yapıldı */
+
+/* Butonlar için özel stiller */
+.btn-primary {
+    @apply px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-secondary transition-colors inline-block;
+}
+
+.btn-secondary {
+    @apply px-6 py-3 border-2 border-primary text-primary font-medium rounded-lg hover:bg-primary hover:text-white transition-colors inline-block;
+}
+
+.btn-small-primary {
+    @apply px-4 py-2 bg-primary text-white text-sm font-medium rounded-lg hover:bg-secondary transition-colors inline-block;
+}
+
+.btn-small-outline {
+    @apply px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg hover:border-primary hover:text-primary transition-colors inline-block;
+}
+
+/* Sosyal medya linkleri için */
+.social-link {
+    @apply w-10 h-10 rounded-full flex items-center justify-center transition-all hover:opacity-90 shadow-md;
+}
+
+/* Büyük sosyal medya ikonları için yeni sınıf */
+.social-link-large {
+    @apply w-12 h-12 rounded-full flex items-center justify-center transition-all hover:opacity-90 shadow-md text-xl;
+}
+
+/* Bölüm başlığı */
+.section-title {
+    @apply text-3xl font-bold text-center mb-12 relative;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: theme('colors.primary');
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Mobil menü için stiller */
+@media (max-width: 768px) {
+    .menu.active {
+        @apply left-0;
+    }
+    
+    .menu {
+        @apply fixed top-16 -left-full w-4/5 h-screen bg-white flex-col items-start p-8 shadow-lg transition-all;
+    }
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Responsive iyileştirmeler */
+@media (max-width: 640px) {
+    /* Mobil cihazlarda hakkımda bölümü için iyileştirmeler */
+    .about-content {
+        @apply gap-6;
+    }
+    
+    /* Mobil görünümde kişisel bilgiler tek sütunda */
+    .personal-info {
+        @apply grid-cols-1 gap-4;
+    }
+    
+    /* Sosyal ikonların mobil görünümü */
+    .social-link-large {
+        @apply w-14 h-14 text-2xl;
+    }
+    
+    /* Form butonları tam genişlikte */
+    .btn-primary, .btn-secondary {
+        @apply w-full text-center mb-3;
+    }
+    
+    /* Bölüm başlığı daha küçük */
+    .section-title {
+        @apply text-2xl mb-8;
+    }
+}
+
+/* Tema geçişleri için daha yumuşak transition */
+* {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+} 

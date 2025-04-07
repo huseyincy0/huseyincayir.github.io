@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hüseyin Çayır - Portfolyo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind Konfigürasyonu -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#4f46e5',
+                        dark: '#1e293b',
+                        light: '#f1f5f9',
+                        accent: '#8b5cf6'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-white">
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-primary">Hüseyin Çayır</div>
+                <ul class="menu hidden md:flex space-x-6">
+                    <li><a href="#anasayfa" class="font-medium hover:text-primary transition-colors">Ana Sayfa</a></li>
+                    <li><a href="#hakkimda" class="font-medium hover:text-primary transition-colors">Hakkımda</a></li>
+                    <li><a href="#vizyon-misyon" class="font-medium hover:text-primary transition-colors">Vizyon & Misyon</a></li>
+                    <li><a href="#projelerim" class="font-medium hover:text-primary transition-colors">Projelerim</a></li>
+                    <li><a href="#yeteneklerim" class="font-medium hover:text-primary transition-colors">Yeteneklerim</a></li>
+                    <li><a href="#iletisim" class="font-medium hover:text-primary transition-colors">İletişim</a></li>
+                </ul>
+                <div class="menu-toggle md:hidden text-2xl cursor-pointer">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="anasayfa" class="pt-24 min-h-screen flex items-center bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Merhaba, Ben <span class="text-primary">Hüseyin Çayır</span></h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8">Flutter & Yapay Zeka Geliştirici</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#projelerim" class="btn-primary">Projelerimi Gör</a>
+                    <a href="#iletisim" class="btn-secondary">İletişime Geç</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hakkimda" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Hakkımda</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="md:col-span-1">
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="assets/profile.jpg" alt="Hüseyin Çayır" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <p class="text-gray-700 mb-6">Ben Hüseyin Çayır. 2002 doğumluyum. Bilgisayar Programcılığı alanında ön lisans eğitimimi tamamladım ve erken yaşlardan itibaren teknolojiye olan merakımı profesyonel becerilere dönüştürme yoluna girdim. Özellikle yazılım geliştirme, mobil teknolojiler ve kullanıcı deneyimi alanlarına yoğunlaşarak bu yolda kendimi adım adım geliştirdim.</p>
+                    
+                    <p class="text-gray-700 mb-6">Flutter ile modern ve işlevsel mobil uygulamalar geliştiriyorum. Şu ana kadar freelance olarak birçok projede yer aldım. Moda ve stil temalı mobil uygulama geliştirme deneyimimle birlikte; kullanıcı arayüzü tasarımı, mobil etkileşimler ve yazılım mimarisi konularında yetkinlik kazandım.</p>
+                    
+                    <p class="text-gray-700 mb-6">Bunlara ek olarak, yapay zeka alanında da eğitim alıyor ve bu teknolojiyi projelerimde aktif olarak kullanmak için çalışıyorum. Sürekli öğrenmeye, üretmeye ve gelişen teknolojilere adapte olmaya büyük önem veriyorum.</p>
+                    
+                    <p class="text-gray-700 mb-6">Aynı zamanda yakın gelecekte kendi yazılım şirketimi kurmak için hazırlıklar yapıyorum. Amacım sadece yazılım geliştirmek değil, aynı zamanda özgün fikirler üretip bunları hayata geçirebileceğim kalıcı yapılar inşa etmek.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="text-primary font-semibold mb-1">İsim:</h3>
+                            <p>Hüseyin Çayır</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="text-primary font-semibold mb-1">E-posta:</h3>
+                            <p>huseyincayir00@gmail.com</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="text-primary font-semibold mb-1">Doğum Yılı:</h3>
+                            <p>2002</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="text-primary font-semibold mb-1">Eğitim:</h3>
+                            <p>Bilgisayar Programcılığı - Ön Lisans</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-5">
+                        <a href="https://www.linkedin.com/in/huseyincy0/" target="_blank" class="social-link-large bg-blue-600 text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/huseyincy0" target="_blank" class="social-link-large bg-gray-800 text-white">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/huseyin.cy0/" target="_blank" class="social-link-large bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vizyon-misyon" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-bold mb-6 text-primary">Vizyonum</h2>
+                    <p class="text-gray-700 mb-4">Yazılım ve yapay zeka teknolojilerini birleştirerek, insanların yaşamını kolaylaştıran, estetik ve işlevsel dijital çözümler üretmek.</p>
+                    <p class="text-gray-700 mb-4">Bilgiye ulaşmayı ve teknolojiyi kullanmayı herkes için daha erişilebilir hale getiren projeler geliştirmek.</p>
+                    <p class="text-gray-700">Uzun vadede; güvenilir, yaratıcı ve sürdürülebilir dijital markalar oluşturmak.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-bold mb-6 text-primary">Misyonum</h2>
+                    <p class="text-gray-700 mb-4">Her gün öğrenmeye açık bir zihinle, çağın ihtiyaçlarını anlayan ve bu ihtiyaçlara çözümler üreten bir yazılımcı olmak.</p>
+                    <p class="text-gray-700 mb-4">Basit ama güçlü, kullanıcı odaklı yazılımlar geliştirerek; hem bireylere hem de işletmelere gerçek değer sunmak.</p>
+                    <p class="text-gray-700">Edindiğim bilgi ve deneyimi paylaşarak, başkalarının da bu yolda gelişmesine katkı sağlamak.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projelerim" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Projelerim</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                    <img src="assets/project1.jpg" alt="Moda Uygulaması" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Moda & Stil Uygulaması</h3>
+                        <p class="text-gray-600 mb-4">Kullanıcıların moda trendlerini takip edebilecekleri ve kişisel stillerini geliştirebilecekleri mobil uygulama.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded">Flutter</span>
+                            <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded">Firebase</span>
+                            <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded">UI/UX</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="btn-small-primary">Canlı Demo</a>
+                            <a href="#" class="btn-small-outline">Kaynak Kod</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                    <img src="assets/project2.jpg" alt="Yapay Zeka Projesi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Yapay Zeka Asistanı</h3>
+                        <p class="text-gray-600 mb-4">Günlük işlerde kullanıcılara yardımcı olan, öğrenebilen ve kişiselleştirilebilen yapay zeka asistanı.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded">Python</span>
+                            <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded">TensorFlow</span>
+                            <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded">API</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="btn-small-primary">Canlı Demo</a>
+                            <a href="#" class="btn-small-outline">Kaynak Kod</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                    <img src="assets/project3.jpg" alt="E-Ticaret Uygulaması" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Mobil E-Ticaret</h3>
+                        <p class="text-gray-600 mb-4">Küçük işletmeler için geliştirilen, kolay kullanımlı ve hızlı mobil e-ticaret uygulaması.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded">Flutter</span>
+                            <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded">Node.js</span>
+                            <span class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded">MongoDB</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="btn-small-primary">Canlı Demo</a>
+                            <a href="#" class="btn-small-outline">Kaynak Kod</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="yeteneklerim" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Yeteneklerim</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Teknik Yetenekler</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Flutter</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Dart</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">UI/UX Tasarım</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Yapay Zeka</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Firebase</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Python</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Pandas & NumPy</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Scikit-learn</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">TensorFlow</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Diğer Yetenekler</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Mobil Uygulama Geliştirme</span>
+                        <span class="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">UI/UX Tasarım</span>
+                        <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">Yapay Zeka</span>
+                        <span class="px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">Veritabanı Yönetimi</span>
+                        <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Proje Yönetimi</span>
+                        <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Problem Çözme</span>
+                        <span class="px-4 py-2 bg-pink-100 text-pink-800 rounded-full text-sm font-medium">Ekip Çalışması</span>
+                        <span class="px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">Sürekli Öğrenme</span>
+                        <span class="px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Adaptasyon</span>
+                        <span class="px-4 py-2 bg-cyan-100 text-cyan-800 rounded-full text-sm font-medium">Veri Analizi</span>
+                        <span class="px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">API Geliştirme</span>
+                        <span class="px-4 py-2 bg-fuchsia-100 text-fuchsia-800 rounded-full text-sm font-medium">Mikroservis Mimarisi</span>
+                        <span class="px-4 py-2 bg-rose-100 text-rose-800 rounded-full text-sm font-medium">DevOps Pratikleri</span>
+                        <span class="px-4 py-2 bg-violet-100 text-violet-800 rounded-full text-sm font-medium">Test Otomasyonu</span>
+                        <span class="px-4 py-2 bg-sky-100 text-sky-800 rounded-full text-sm font-medium">Kod Optimizasyonu</span>
+                        <span class="px-4 py-2 bg-lime-100 text-lime-800 rounded-full text-sm font-medium">Güvenlik En İyi Uygulamaları</span>
+                        <span class="px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-medium">Performans İyileştirme</span>
+                        <span class="px-4 py-2 bg-slate-100 text-slate-800 rounded-full text-sm font-medium">Dokümantasyon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">İletişim</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="md:col-span-1">
+                    <h3 class="text-xl font-semibold mb-6">İletişim Bilgilerim</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p>huseyincayir00@gmail.com</p>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <p>+90 555 123 4567</p>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p>Türkiye</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-5 mt-8">
+                        <a href="https://www.linkedin.com/in/huseyincy0/" target="_blank" class="social-link-large bg-blue-600 text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/huseyincy0" target="_blank" class="social-link-large bg-gray-800 text-white">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/huseyin.cy0/" target="_blank" class="social-link-large bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-2">
+                    <h3 class="text-xl font-semibold mb-6">Mesaj Gönder</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="İsim" required name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="E-posta" required name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Konu" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <textarea placeholder="Mesajınız" rows="5" required name="message" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full md:w-auto">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 - Hüseyin Çayır - Tüm Hakları Saklıdır</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
